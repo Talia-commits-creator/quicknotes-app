@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #222;
+}
+
+header {
+  background: #087f8c;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+main {
+  max-width: 700px;
+  margin: 25px auto;
+  padding: 0 15px;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #ddd;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input {
+  flex: 1;
+  min-width: 150px;
+}
+
+button {
+  background: #087f8c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #055d66;
+}
+
+#notes-list {
+  list-style: none;
+  padding: 0;
+}
+
+.note {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  margin: 12px 0;
+  overflow-wrap: anywhere;
+}
+
+.category-personal {
+  border-left: 5px solid teal;
+}
+
+.category-work {
+  border-left: 5px solid darkred;
+}
+
+.category-study {
+  border-left: 5px solid blue;
+}
+
+.category-label, .note-date {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #666;
+}
+
+.delete-btn {
+  margin-top: 10px;
+  background: #b42318;
+}
+
+.delete-btn:hover {
+  background: #7a1710;
+}
+
+#error-message {
+  color: red;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #087f8c;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  form {
+    flex-direction: column;
+  }
+
+  form input, form select, form button {
+    width: 100%;
+  }
+}
